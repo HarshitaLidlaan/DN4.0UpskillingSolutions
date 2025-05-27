@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap 5 Exercises</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding: 2rem;
+      background: #f8f9fa;
+    }
+    code {
+      background-color: #e9ecef;
+      padding: 0.2em 0.4em;
+      border-radius: 0.25rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">Bootstrap 5 Exercises</h1>
+
+    <section>
+      <h2>1. Setting Up Bootstrap 5</h2>
+      <h5>Exercise 1.1:</h5>
+      <p>Create a basic HTML page and link Bootstrap 5 via CDN.</p>
+
+      <h5>Exercise 1.2:</h5>
+      <p>Set up a project using npm or downloaded Bootstrap files. Use the downloaded files in a sample HTML page.</p>
+    </section>
+
+    <section>
+      <h2>2. Bootstrap Structure and Files</h2>
+      <h5>Exercise 2.1:</h5>
+      <p>Explore the structure of the downloaded Bootstrap directory. Identify and explain the purpose of the <code>CSS</code>, <code>JS</code>, and <code>icons</code> folders.</p>
+
+      <h5>Exercise 2.2:</h5>
+      <p>Modify your HTML to include Bootstrap's JavaScript plugins via <code>bootstrap.bundle.min.js</code>.</p>
+    </section>
+
+    <section>
+      <h2>3. Fundamentals of Responsive Grid Layout</h2>
+      <h5>Exercise 3.1:</h5>
+      <p>Create a container with three columns that stack vertically on mobile, two-per-row on tablets, and three-per-row on desktops.</p>
+
+      <h5>Exercise 3.2:</h5>
+      <p>Use <code>.container</code>, <code>.row</code>, and <code>.col-*</code> classes appropriately for responsive design.</p>
+    </section>
+
+    <section>
+      <h2>4. Column Layouts and Grid Classes</h2>
+      <h5>Exercise 4.1:</h5>
+      <p>Design a two-column layout with a sidebar (<code>col-md-3</code>) and content area (<code>col-md-9</code>).</p>
+
+      <h5>Exercise 4.2:</h5>
+      <p>Create a four-column layout (<code>col-sm-3</code>) with equal width.</p>
+    </section>
+
+    <section>
+      <h2>5. Alignment and Reordering in Grid</h2>
+      <h5>Exercise 5.1:</h5>
+      <p>Use <code>justify-content-center</code> and <code>align-items-center</code> to center content inside a row.</p>
+
+      <h5>Exercise 5.2:</h5>
+      <p>Reorder columns on different screen sizes using <code>order-md-2</code>, <code>order-md-1</code>.</p>
+    </section>
+
+    <section>
+      <h2>6. Responsive Flexbox Utilities</h2>
+      <h5>Exercise 7.1:</h5>
+      <p>Create a navbar using <code>d-flex</code>, <code>flex-column</code>, and <code>flex-md-row</code> for responsive behavior.</p>
+
+      <h5>Exercise 7.2:</h5>
+      <p>Use <code>justify-content-between</code> and <code>align-items-center</code> in a card layout.</p>
+    </section>
+
+    <section>
+      <h2>7. Typography</h2>
+      <h5>Exercise 7.1:</h5>
+      <p>Create a sample page with different Bootstrap typography utilities: <code>display-1</code>, <code>lead</code>, <code>text-muted</code>, <code>fw-bold</code>, etc.</p>
+
+      <h5>Exercise 7.2:</h5>
+      <p>Use <code>text-uppercase</code>, <code>text-lowercase</code>, <code>text-capitalize</code>.</p>
+    </section>
+
+    <section>
+      <h2>8. Forms</h2>
+      <h5>Exercise 8.1:</h5>
+      <p>Create a registration form using Bootstrap form components like <code>form-control</code>, <code>form-check</code>, and <code>input-group</code>.</p>
+
+      <h5>Exercise 8.2:</h5>
+      <p>Style a login form using <code>form-floating</code>.</p>
+    </section>
+
+    <section>
+      <h2>9. Buttons</h2>
+      <h5>Exercise 9.1:</h5>
+      <p>Create buttons using all contextual classes: <code>btn-primary</code>, <code>btn-secondary</code>, <code>btn-outline-*</code>, etc.</p>
+
+      <h5>Exercise 9.2:</h5>
+      <p>Add button groups using <code>btn-group</code>, and create toggle buttons with checkboxes.</p>
+    </section>
+
+    <section>
+      <h2>10. Navbars and Navigation</h2>
+      <h5>Exercise 10.1:</h5>
+      <p>Create a responsive navbar with logo, navigation links, and a search form.</p>
+
+      <h5>Exercise 10.2:</h5>
+      <p>Use <code>nav</code>, <code>nav-tabs</code>, <code>nav-pills</code> for creating tabbed navigation.</p>
+    </section>
+
+    <section>
+      <h2>11. Cards and Media Objects</h2>
+      <h5>Exercise 11.1:</h5>
+      <p>Create a profile card using <code>card</code>, <code>card-body</code>, <code>card-title</code>, and <code>card-img-top</code>.</p>
+
+      <h5>Exercise 11.2:</h5>
+      <p>Design a media object layout using <code>media</code> and align an image to the left of the content.</p>
+    </section>
+
+    <section>
+      <h2>12. Spacing Utilities</h2>
+      <h5>Exercise 12.1:</h5>
+      <p>Apply margin (<code>m-3</code>, <code>mt-4</code>) and padding (<code>p-2</code>, <code>py-5</code>) utilities on layout sections.</p>
+
+      <h5>Exercise 12.2:</h5>
+      <p>Build a pricing section where spacing improves the layout.</p>
+    </section>
+
+    <section>
+      <h2>13. Colors and Backgrounds</h2>
+      <h5>Exercise 13.1:</h5>
+      <p>Create a dashboard page using contextual background classes (<code>bg-primary</code>, <code>bg-warning</code>, etc.) and text colors.</p>
+
+      <h5>Exercise 13.2:</h5>
+      <p>Use <code>bg-gradient</code> with <code>bg-dark</code> and white text.</p>
+    </section>
+
+    <section>
+      <h2>14. Display and Visibility</h2>
+      <h5>Exercise 14.1:</h5>
+      <p>Use <code>d-none</code>, <code>d-md-block</code>, <code>d-lg-flex</code> to hide/show sections based on screen size.</p>
+
+      <h5>Exercise 14.2:</h5>
+      <p>Create a responsive sidebar that only shows on tablets and above.</p>
+    </section>
+
+    <section>
+      <h2>15. Borders, Shadows, and Rounded Corners</h2>
+      <h5>Exercise 15.1:</h5>
+      <p>Add border utilities like <code>border</code>, <code>border-primary</code>, <code>border-3</code>, and <code>rounded-circle</code> to an image.</p>
+
+      <h5>Exercise 15.2:</h5>
+      <p>Use <code>shadow</code>, <code>shadow-lg</code> and <code>rounded-pill</code> in a card.</p>
+    </section>
+
+    <section>
+      <h2>16. Positioning Utilities</h2>
+      <h5>Exercise 16.1:</h5>
+      <p>Create a fixed footer using <code>position-fixed bottom-0</code>.</p>
+
+      <h5>Exercise 16.2:</h5>
+      <p>Use <code>position-relative</code> and <code>position-absolute</code> to overlay a badge over an image.</p>
+    </section>
+
+    <section>
+      <h2>17. Icons with Bootstrap Icons</h2>
+      <h5>Exercise 17.1:</h5>
+      <p>Install and use Bootstrap Icons in a webpage: add social media icons in the footer.</p>
+
+      <h5>Exercise 17.2:</h5>
+      <p>Replace text buttons with icon-only buttons using Bootstrap Icons.</p>
+    </section>
+
+    <section>
+      <h2>18. Bootstrap 5 JavaScript Plugins</h2>
+      <h5>Exercise 18.1:</h5>
+      <p>Add a modal popup triggered by a button.</p>
+
+      <h5>Exercise 18.2:</h5>
+      <p>Create a collapsible accordion using accordion and Bootstrap JavaScript behavior.</p>
+    </section>
+
+    <section>
+      <h2>19. Customization with Sass</h2>
+      <h5>Exercise 19.1:</h5>
+      <p>Set up a Bootstrap 5 project with Sass using npm.</p>
+
+      <h5>Exercise 19.2:</h5>
+      <p>Customize primary colors and border radius via <code>_variables.scss</code> and recompile Bootstrap.</p>
+    </section>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
