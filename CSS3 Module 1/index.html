@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Local Community Event Portal</h1>
+            <!-- navigation tag -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="help.html" target="_blank">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <section class="hero">
+        <div id="welcomebanner" class="hero-content">
+            <h1 style="color: red;">WELCOME</h1> <!-- Inline style -->
+            <p>Glad to see you, <span class="highlight">Special Offer: Free Entry!</span></p>
+            <p class="highlight">Don't miss our upcoming community events!</p>
+        </div>
+
+        <div class="table">
+            <table>
+                <caption>Past Community Events</caption>
+                <tr>
+                    <td><img src="music.jpg" class="event-image" alt="Music Night" title="Community Music Night"></td>
+                    <td><img src="art.jpg" class="event-image" alt="Art Fair" title="Annual Art Fair"></td>
+                    <td><img src="food.jpg" class="event-image" alt="Food Festival" title="Delicious Food Fest"></td>
+                </tr>
+                <tr>
+                    <td><img src="yoga.jpg" class="event-image" alt="Yoga Day" title="Morning Yoga Event"></td>
+                    <td><img src="book.jpg" class="event-image" alt="Book Fair" title="Local Book Exhibition"></td>
+                    <td><img src="kids.jpg" class="event-image" alt="Kids Carnival" title="Fun Carnival for Kids"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Event Registration Form -->
+    <section id="registration">
+        <h2 style="text-align: center;">Register for an Event</h2>
+        <form id="eventForm" onsubmit="showConfirmation(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required autofocus><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+            <label for="date">Event Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="eventType">Event Type:</label><br>
+            <select id="eventType" name="eventType" onchange="savePreference()" required>
+                <option value="">Select</option>
+                <option value="music">Music Night</option>
+                <option value="art">Art Fair</option>
+                <option value="food">Food Festival</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Any special requests?" rows="4" cols="30" onkeyup="countCharacters()"></textarea>
+            <p>Characters typed: <span id="charCount">0</span></p><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" placeholder="e.g. 9876543210" onblur="validatePhone()"><br><br>
+
+            <button type="submit" onclick="showConfirmation(event)">Submit</button><br><br>
+            <output id="confirmation"></output><br>
+            <button type="button" onclick="clearPreferences()">Clear Preferences</button>
+        </form>
+    </section>
+
+    <!-- Video Invite -->
+    <section id="videoInvite" style="text-align: center; margin: 30px;">
+        <h2>Watch Our Promo Video</h2>
+        <video width="320" height="240" controls oncanplay="videoReadyMessage()">
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p id="videoMsg"></p>
+    </section>
+
+    <!-- Geolocation -->
+    <section id="location" style="text-align: center; margin: 30px;">
+        <h2>Find Nearby Events</h2>
+        <button onclick="getLocation()">Find Nearby Events</button>
+        <p id="locationOutput"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+    <!-- External JS Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
